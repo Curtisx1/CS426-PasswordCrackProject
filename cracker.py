@@ -362,7 +362,7 @@ class CreativeCracker:
 
 def main():
     print("=" * 70)
-    print(" CREATIVE PASSWORD CRACKER - Kitchen Sink Edition")
+    print(" CREATIVE PASSWORD CRACKER")
     print("=" * 70)
     
     # Load data
@@ -445,11 +445,6 @@ def main():
     print(f"Success: {cracked}/{len(id_to_hash)} ({100*cracked//max(len(id_to_hash),1)}%)")
     if not_cracked:
         print(f"Still need: {', '.join(not_cracked)}")
-        print("\nSuggestions:")
-        print("  - Share examples of cracked passwords for pattern analysis")
-        print("  - Try reducing word list to top 100-200 most common words")
-        print("  - Consider GPU-based cracking (hashcat)")
-        print("  - Check if passwords might be from a different word list")
     print("=" * 70)
 
 if __name__ == "__main__":
